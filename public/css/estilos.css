@@ -1,0 +1,456 @@
+/*GENERALES*/
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/*HEADER*/
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+
+
+}
+
+.header__name h1{
+  font-size: 5rem;
+  padding: 0 25px;
+}
+
+
+
+.header__icono{
+  height: 100%;
+  width: 20%;
+  border: 0;
+  background-color: transparent;
+}
+  
+.icono{
+  font-size: 2rem;
+}
+
+.header__navigation{
+  width: 100%;
+  height: 25vh;
+  background-color:rgb(80,80,80);
+  display:flex ;
+  justify-content: center ;
+  align-items: center;
+  align-content: center;
+  display: none;
+  
+}
+
+.header__navigation--active{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  
+  }
+  
+  .header__navigation--disabled{
+   display: none;
+  }
+  
+
+
+
+.header__navigation ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  }
+  
+
+  .header__navigation li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    }
+
+    .navigation__link{
+      color: lightcoral;
+      text-decoration: none;
+      font-size: 3.5rem;
+      }
+      
+    
+/*SECTION BANNER*/
+
+.banner{
+  padding: 0 25px;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+ 
+}
+  
+.contenido__banner{
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  
+  
+}
+
+.contenido__banner h1{
+  font-size: 5rem;
+  padding: 10% 0;
+}
+
+.boton__turno{
+  font-size: 2rem;
+  text-decoration: none;
+  color: darkorchid;
+  border: 1px solid darkorchid;
+  padding: 10px 20px;
+  align-self: baseline;
+}
+
+  
+/*MAIN*/
+
+main section{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+padding: 0 15%;
+font-size: 4rem;
+}
+
+
+
+/*SECCION NOSOTROS*/
+#us{
+  background-color: rgb(180,180,180);
+  }
+
+  #us h2{
+    font-size: 6rem;
+    color:black;
+    margin-top: 15%;
+    align-items: flex-start;
+  }
+
+
+  #us h3  {
+    font-size: 4rem;
+    color: lightcoral;
+    margin-top: 15%;
+  }
+  
+  #us p{
+  margin-top: 15%;
+  font-size: 3rem;
+  text-align: justify;
+  color: lightcoral;
+  }  
+
+  /*SECCION SERVICIOS*/
+
+#services{
+  background-color: rgb(230,230,230);
+}
+
+#services h2  {
+  font-size: 5rem;
+  color: black;
+}
+
+.services__item{
+width: 100%;
+height: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin:15% 0;
+}
+
+.services__image{
+font-size: 10rem;
+}
+
+.services__item h3{
+font-size: 3rem;
+}
+
+/*CONTACTO*/
+
+#Contact{
+  background-color: rgb(80,80,80);
+  height: auto;
+  }
+  
+  #Contact h2{
+  color: rgb(240,240,240);
+  font-size: 5rem;
+  }
+  
+  .Contact__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:15% 0;
+  }
+  
+  .contact__image{
+  font-size: 5rem;
+  color: rgb(240,240,240);
+  }
+  
+  .contact__title{
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgb(240,240,240);
+  }
+
+  /*Footer*/
+
+footer{
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10,10,10);
+  }
+  
+  footer span{
+  font-size: 3rem;
+  color: rgb(240,240,240);
+  text-align: center;
+  }
+  
+
+  @media (min-width:1024px) {
+
+    header{
+      height: 12vh;
+    }
+
+  .header__icono{
+    display: none;
+  }
+
+  .header__navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    flex-direction:row;
+    width: 70%;
+    height: 100%;
+    
+  }
+
+  .header__navigation ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    }
+
+  .navigation__link{
+    font-size: 2rem;
+    color: black;
+  }
+
+  /*BANNER*/
+
+.banner{
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.contenido__banner{
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  }
+
+.contenido__banner h1{
+  font-size: 3rem;
+  padding: 10% 0;
+}
+
+.boton__turno{
+  font-size: 1rem;
+  text-decoration: none;
+  color: darkorchid;
+  border: 1px solid darkorchid;
+  padding: 10px 20px;
+  align-self: baseline;
+}
+
+/*MAIN*/
+
+/*NOSOTROS*/
+
+#us{
+  height: auto;
+
+}
+
+#us h2{
+  margin: 15% 0;
+  font-size: 3rem;
+}
+
+
+#us h3{
+  margin:0 15%;
+ font-size: 3rem;
+}
+
+#us p{
+ margin:15% 0;
+font-size: 1.5rem;
+text-align: justify;
+color: lightcoral;
+justify-content: flex-start;
+}  
+
+
+/*SERVICIOS*/
+
+#services{
+  height: auto;
+}
+
+
+  /*SECCION SERVICIOS*/
+
+  #services{
+    background-color: pink;
+  }
+  
+  #services h2  {
+    font-size: 3rem;
+    color: black;
+  }
+  
+  .services__item{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:15% 0;
+  }
+  
+  .services__image{
+  font-size: 10rem;
+  }
+  
+  .services__item h3{
+  font-size: 3rem;
+  }
+
+
+  /*CONTACTO*/
+
+#Contact{
+  background-color: rgb(80,80,80);
+  height: auto;
+  }
+  
+  #Contact h2{
+  color: rgb(240,240,240);
+  font-size: 3rem;
+  }
+  
+  .Contact__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:15% 0;
+  }
+  
+  .contact__image{
+  font-size: 3rem;
+  color: rgb(240,240,240);
+  }
+  
+  .contact__title{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(240,240,240);
+  }
+
+  /*Footer*/
+
+footer{
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10,10,10);
+  }
+  
+  footer span{
+  font-size: 1.5rem;
+  color: rgb(240,240,240);
+  text-align: center;
+  }
+  
+  
+
+  }
+  
+
+
+
